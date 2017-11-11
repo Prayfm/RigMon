@@ -1,0 +1,48 @@
+{
+    "currency": "eur",
+    "currency_symbol": "€",
+    "electricity": 0.09,
+    "miner_poll": 10000,
+    "miner_timeout": 10000,
+    "chatid": 0,
+    "token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "clay": [
+        {
+            "name": " rx1",
+            "host": "192.168.10.36",
+            "port": 3333,
+            "comments": "rx1/blank",
+            "power": 820,
+            "coin": "ETH",
+            "algo": "eth"
+        },
+        {
+            "name": " rx2",
+            "host": "192.168.10.39",
+            "port": 3333,
+            "comments": "rx2/rx2",
+            "power": 820,
+            "coin": "ETH",
+            "algo": "eth"
+        }
+    ],
+    "ewbf": [ 
+        {
+            "name": "gtx1",
+            "host": "192.168.10.45",
+            "port": 4200,
+            "comments": "gtx1/blank",
+            "power": 430,
+            "coin": "BTCZ",
+            "algo": "eq"
+        }
+    ],
+    "poloniex": {
+        "key": "YOUR_POLO_API_KEY",
+        "secret": "YOUR_POLO_SECRET_KEY"
+    },
+    "bittrex": {
+        "key" : "YOUR_BITTREX_API_KEY",
+        "secret" : "YOUR_BITTREX_SECRET_KEY"
+    }
+}

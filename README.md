@@ -35,9 +35,10 @@ Open `config.json` with your favorite text editor
 
 Specify your currency and symbol here:
 
-`"currency": "usd"`
-
-`"currency_symbol": "$"`
+```
+"currency": "usd"
+"currency_symbol": "$"
+```
 
 You can use any currency you see on https://coinmarketcap.com, you have to use lowercase letters.
 
@@ -45,11 +46,11 @@ Specify your power cost per kW (for example, 0.09 is 9 cents for 1 kilowatthour)
 
 `"electricity": 0.09`
 
-Replace your Telegram Bot token with TELEGRAMBOT_TOKEN here:
+Replace TELEGRAMBOT_TOKEN with your Telegram Bot token here:
 
 `"token": "TELEGRAMBOT_TOKEN"`
 
-* How to get Telegram Token
+## How to get Telegram Token
 
 Talk to the BotFather https://telegram.me/botfather
 
@@ -58,10 +59,25 @@ Write /newbot and follow the instructions
 You should get your token like this:
 ```
 Use this token to access the HTTP API:
-
 488814350:AAFxmfas0zOKSmDaAgAierd90-v8h_LKeF8
 ```
-* Configuring your mining rigs
+## Configuring your mining rigs
+
+Sample configuration:
+
+```
+"clay": [
+        {
+            "name": "rig1",
+            "host": "192.168.1.2",
+            "port": 3333,
+            "comments": "loginName/password",
+            "power": 510,
+            "coin": "ETH",
+            "algo": "eth"
+        }
+]
+```
 
 Use `"clay":` for rigs using Claymore miner
 
@@ -74,7 +90,7 @@ Change host and port address to what you set up as your miners API.
 ```
 Default values for Claymore is port 3333, EWBF is port 42000.
 
-Use IP 127.0.0.1 if you are mining on the computer you are running RigMon.
+Use IP 127.0.0.1 if you are mining on this computer.
 
 You can reference your rig with any comments you like, I put my remote login and password here.
 
@@ -92,40 +108,69 @@ Put the coin shortname and algorithm you are mining with this rig here:
 
 Currently available algos are: 
 
+```
 eth - Ethereum
-
 eq - Equihash
-
 cn - CryptoNight
+```
 
-* First time run
+## First time run
 
-After running your bot for the first time, you have to use the command /id
+After running your bot for the first time, you have to use the command 
+
+`/id`
 
 You will receive your chat id which you will have to put to the config file here:
 
 `"chatid": 123456`
 
-You can also add your bot to a group and get an /id there.
+You can also add your bot to a group chat and get an /id there.
+
+## Exchange API keys
+
+Currently supported exchanges:
+
+Poloniex
+
+Bittrex
+
+Use the read-only API key without any access to trading.
+
+This program uses the keys only to get your balance and withdrawal/deposit history.
+
+Put your API keys here:
+
+```
+    "poloniex": {
+        "key": "YOUR_API_KEY_POLONIEX",
+        "secret": "YOUR_SECRET_KEY_POLONIEX"
+    },
+    "bittrex": {
+        "key" : "YOUR_API_KEY_BITTREX",
+        "secret" : "YOUR_SECRET_KEY_BITTREX"
+    }
+```
 
 ### Available commands ###
 
-`/status`
+```
+Simple commands:
 
+/status
 Displays the current status of all rigs.
-
-`/detailed`
-
+/detailed
 Displays more information, like temps and power usage (for EWBF).
-
-`/pools`
-
+/pools
 Displays current pool servers.
-
-`/ip`
-
+/ip
 Displays current ip addresses of rigs.
-
-`/profit`
-
+/profit
 Displays current profit taken from whattomine.com, including electricity costs.
+
+Exchange commands (needs an API key):
+
+/balances
+Returns balances for your account.
+/history
+Returns withdrawal and deposit history for the last week.
+```
