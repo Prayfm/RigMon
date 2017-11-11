@@ -66,7 +66,7 @@ bot.onText(/\/id/, (msg) => {
 });
 
 bot.onText(/\/help/, (msg) => {    
-    bot.sendMessage(msg.chat.id,text="<pre>Available commands:\n/status, /detailed, /pools, /ip, /profit</pre>",{parse_mode : "HTML"});
+    bot.sendMessage(msg.chat.id,text="<pre>Available commands:\n/status, /detailed, /pools, /ip, /profit\nExchange commands:\n/balances, /history</pre>",{parse_mode : "HTML"});
 });
 
 bot.onText(/\/ip/, (msg) => {

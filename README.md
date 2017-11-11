@@ -15,12 +15,13 @@ You can also check balance and transaction history in:
 
 ### How do I get set up? ###
 
-* Download and install Node.js
+Download and install Node.js
 
 https://nodejs.org/en/download/
 
-* Clone or download this repository
-* With a command line go to the repository folder and run
+Clone or download this repository
+
+With a command line go to the repository folder and run
 
 `npm install`
 
@@ -28,8 +29,7 @@ When you are finished with the config.json, you can run
 
 `npm start`
 
-### config.json ###
-* Configuration
+### Configuring config.json ###
 
 Open `config.json` with your favorite text editor
 
@@ -56,7 +56,9 @@ Talk to the BotFather https://telegram.me/botfather
 Write /newbot and follow the instructions
 
 You should get your token like this:
+
 `Use this token to access the HTTP API:
+
 488814350:AAFxmfas0zOKSmDaAgAierd90-v8h_LKeF8`
 
 * Configuring your mining rigs
@@ -106,3 +108,25 @@ You will receive your chat id which you will have to put to the config file here
 `"chatid": 123456`
 
 You can also add your bot to a group and get an /id there.
+
+### Available commands ###
+
+`/status`
+
+Displays the current status of all rigs.
+
+`/detailed`
+
+Displays more information, like temps and power usage (for EWBF).
+
+`/pools`
+
+Displays current pool servers.
+
+`/ip`
+
+Displays current ip addresses of rigs.
+
+`/profit`
+
+Displays current profit taken from whattomine.com, including electricity costs.
