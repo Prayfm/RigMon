@@ -1,0 +1,25 @@
+{
+    "app_name": "RigMon",
+    "bg-script": "server.js",
+    "dom_storage_quota": "10",
+    "main": "server.js",
+    "name": "rigmon",
+    "nodejs": true,
+    "version": "0.0.1",
+    "webkit": {},
+    "window": {
+        "id": "rigmon",
+        "title": "rigmon"
+    },
+    "dependencies": {
+        "moment": "^2.19.1",
+        "node-bittrex-api": "^0.7.7",
+        "node-telegram-bot-api": "^0.29.0",
+        "nonce": "^1.0.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Prayfm/RigMon.git"
+    },
+    "license": "MIT"
+}
