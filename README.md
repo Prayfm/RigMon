@@ -21,14 +21,6 @@ https://nodejs.org/en/download/
 
 Clone or download this repository
 
-With a command line go to the repository folder and run
-
-`npm install`
-
-When you are finished with the config.json, you can run
-
-`npm start`
-
 ### Configuring config.json ###
 
 Open `config.json` with your favorite text editor
@@ -116,13 +108,42 @@ cn - CryptoNight
 
 ## First time run
 
-After running your bot for the first time, you have to use the command 
+Don't forget to install Node.js
+
+Open up your command prompt or terminal and navigate to your directory
+
+(Easy way to open Command Prompt is to shift+right click inside the folder)
+
+Navigate to your directory using 
+
+```
+cd *your directory*
+for example:
+cd C:/Users/User/rigmon
+```
+
+Then, run these commands
+
+```
+npm install
+npm start
+```
+
+npm install will install required dependancies for this script and npm start will run it.
+
+After running npm start for the first time, you have to send a direct message to the bot:
 
 `/id`
 
 You will receive your chat id which you will have to put to the config file here:
 
 `"chatid": 123456`
+
+It will enable monitoring of your rigs, in case it gets offline or stuck, you will receive a notification.
+
+Each time you make a change to the config file, you will have to restart the bot.
+
+Use ctrl+c to stop the running script and start it again.
 
 You can also add your bot to a group chat and get an /id there.
 

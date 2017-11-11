@@ -26,6 +26,7 @@ var poloniex = new Poloniex(
         'apisecret' : config.bittrex.secret
     });
 
+if(config.token != 0)
 setInterval(function(){
     a = ewbfmonitor.getData();
     b = claymore.getData();
