@@ -56,11 +56,11 @@ Talk to the BotFather https://telegram.me/botfather
 Write /newbot and follow the instructions
 
 You should get your token like this:
+```
+Use this token to access the HTTP API:
 
-`Use this token to access the HTTP API:`
-
-`488814350:AAFxmfas0zOKSmDaAgAierd90-v8h_LKeF8`
-
+488814350:AAFxmfas0zOKSmDaAgAierd90-v8h_LKeF8
+```
 * Configuring your mining rigs
 
 Use `"clay":` for rigs using Claymore miner
@@ -68,11 +68,10 @@ Use `"clay":` for rigs using Claymore miner
 Use `"ewbf":` for rigs using EWBF miner
 
 Change host and port address to what you set up as your miners API.
-
-`"host": "127.0.0.1"`
-
-`"port": 3333`
-
+```
+"host": "127.0.0.1"
+"port": 3333
+```
 Default values for Claymore is port 3333, EWBF is port 42000.
 
 Use IP 127.0.0.1 if you are mining on the computer you are running RigMon.
