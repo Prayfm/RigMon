@@ -57,9 +57,9 @@ Write /newbot and follow the instructions
 
 You should get your token like this:
 
-`Use this token to access the HTTP API:
+`Use this token to access the HTTP API:`
 
-488814350:AAFxmfas0zOKSmDaAgAierd90-v8h_LKeF8`
+`488814350:AAFxmfas0zOKSmDaAgAierd90-v8h_LKeF8`
 
 * Configuring your mining rigs
 
