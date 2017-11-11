@@ -13,7 +13,7 @@ You can also check balance and transaction history in:
 * Bittrex
 * Poloniex
 
-### How do I get set up? ###
+## How do I get set up? ###
 
 Download and install Node.js
 
@@ -42,7 +42,7 @@ Replace TELEGRAMBOT_TOKEN with your Telegram Bot token here:
 
 `"token": "TELEGRAMBOT_TOKEN"`
 
-## How to get Telegram Token
+### How to get Telegram Token
 
 Talk to the BotFather https://telegram.me/botfather
 
@@ -53,7 +53,7 @@ You should get your token like this:
 Use this token to access the HTTP API:
 488814350:AAFxmfas0zOKSmDaAgAierd90-v8h_LKeF8
 ```
-## Configuring your mining rigs
+### Configuring your mining rigs
 
 Sample configuration:
 
@@ -106,7 +106,7 @@ eq - Equihash
 cn - CryptoNight
 ```
 
-## First time run
+### First time run
 
 Don't forget to install Node.js
 
@@ -147,7 +147,7 @@ Use ctrl+c to stop the running script and start it again.
 
 You can also add your bot to a group chat and get an /id there.
 
-## Exchange API keys
+### Exchange API keys
 
 Currently supported exchanges:
 
@@ -172,7 +172,7 @@ Put your API keys here:
     }
 ```
 
-### Available commands ###
+## Available commands ###
 
 ```
 Simple commands:
